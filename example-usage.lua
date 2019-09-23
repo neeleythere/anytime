@@ -1,4 +1,4 @@
--- Example usage of AnyTime module
+-- Example usage of AnyTime module.
 -- The AnyTime module will be moved to ReplicatedStorage, so you'll need to look for it there.
 
 local rs = game:GetService("ReplicatedStorage")
