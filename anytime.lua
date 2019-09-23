@@ -1,12 +1,12 @@
 -- Written by ausmel105
 -- 16th of August, 2018
 
---[[IMPORTANT: GET YOUR OWN UNIQUE KEY OTHERWISE THIS WILL NOT WORK!
+--[[IMPORTANT: GENERATE YOUR OWN UNIQUE KEY OTHERWISE THIS WILL NOT WORK!
 	
-	1. Open your web browser and navigate to this url: https://console.developers.google.com/flows/enableapi?apiid=timezone_backend&keyType=SERVER_SIDE&reusekey=true
+	1. Open your web browser and navigate to: https://console.developers.google.com/flows/enableapi?apiid=timezone_backend&keyType=SERVER_SIDE&reusekey=true
 	2. Sign into Google if you have not already done so.
 	3. Select "Create a new project" and click on "Continue"
-	4. Wait for google to create your project.
+	4. Wait for Google to create your project.
 	5. When asked for a name and IP addresses to accept requests from, DO NOT CHANGE ANYTHING. Simply click on "Create".
 	6. You now have your very own key!
 	
