@@ -1,4 +1,4 @@
--- Example usage of AnyTime module
+-- Example usage of AnyTime module.
 -- The AnyTime module will be moved to ReplicatedStorage, so you'll need to look for it there.
 
 local rs = game:GetService("ReplicatedStorage")
@@ -22,6 +22,7 @@ function createClock(coordinates)
 end
 
 input_display.submit.MouseButton1Click:Connect(function()
+<<<<<<< HEAD
     clock = nil
     local latitude = tonumber(input_display.latitude.Text)
     local longitude = tonumber(input_display.longitude.Text)
@@ -34,3 +35,17 @@ input_display.submit.MouseButton1Click:Connect(function()
     output_display.location.Text = clock.location
     output_display.timezone.Text = clock.timezone
 end)
+=======
+	clock = nil
+	local latitude = tonumber(input_display.latitude.Text)
+	local longitude = tonumber(input_display.longitude.Text)
+	if (latitude == nil) or (longitude == nil) then
+		input_display.errormsg.Visible = true
+		return
+	end
+	input_display.errormsg.Visible = false
+	createClock({latitude, longitude})
+	output_display.location.Text = clock.location
+	output_display.timezone.Text = clock.timezone
+end)
+>>>>>>> c3ceb5009850d5364bb49fbcf82556c81926bffb
