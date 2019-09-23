@@ -1,4 +1,4 @@
--- Written by ausmel105
+-- Written by Neeley C
 -- 16th of August, 2018
 
 --[[IMPORTANT: GENERATE YOUR OWN UNIQUE KEY OTHERWISE THIS WILL NOT WORK!
