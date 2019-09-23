@@ -10,27 +10,27 @@ local output_display = script.Parent.Parent.output_display.Frame
 local clock
 
 function createClock(coordinates)
-	clock = anyTime.new(coordinates)
-	coroutine.wrap(function()
-		local currentClock = clock
-		while clock == currentClock do
-			output_display.time.Text = clock.time
-			clock:tick()
-		end
-	end)()
-	return clock
+    clock = anyTime.new(coordinates)
+    coroutine.wrap(function()
+        local currentClock = clock
+        while clock == currentClock do
+            output_display.time.Text = clock.time
+            clock:tick()
+        end
+    end)()
+    return clock
 end
 
 input_display.submit.MouseButton1Click:Connect(function()
-	clock = nil
-	local latitude = tonumber(input_display.latitude.Text)
-	local longitude = tonumber(input_display.longitude.Text)
-	if (latitude == nil) or (longitude == nil) then
-		input_display.errormsg.Visible = true
-		return
-	end
-	input_display.errormsg.Visible = false
-	createClock({latitude, longitude})
-	output_display.location.Text = clock.location
-	output_display.timezone.Text = clock.timezone
+    clock = nil
+    local latitude = tonumber(input_display.latitude.Text)
+    local longitude = tonumber(input_display.longitude.Text)
+    if (latitude == nil) or (longitude == nil) then
+        input_display.errormsg.Visible = true
+        return
+    end
+    input_display.errormsg.Visible = false
+    createClock({latitude, longitude})
+    output_display.location.Text = clock.location
+    output_display.timezone.Text = clock.timezone
 end)
