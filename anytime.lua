@@ -12,7 +12,7 @@
 	
 --]]
 
-local key = "AIzaSyDSe2kNJwHsVcCSNmBQBdWrDWWCv0c_Muw" -- API key here
+local key = "" -- API key here
 
 local HttpService = game:GetService("HttpService")
 local RunService = game:GetService("RunService")
